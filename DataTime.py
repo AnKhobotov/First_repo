@@ -1,10 +1,11 @@
 import datetime
 from datetime import timedelta
+from datetime import datetime
 #import timedelta
 data = datetime.datetime.now()
 print(data)
 
-from datetime import datetime
+
 
 
 def string_to_date(date_string):
@@ -56,11 +57,11 @@ def prepare_user_list(user_data):
 
 def get_upcoming_birthdays(users, days=7):
     upcoming_birthdays = []
-    today = date.today()
-    bdays = prepare_user_list(users).replace(year = today.year())
-    upcoming_birthdays.append(bdays)
+    #today = date.today()
+    #bdays = prepare_user_list(users).replace(year = today.year())
+    #upcoming_birthdays.append(bdays)
 
 
-print(prepare_user_list(users), upcoming_birthdays)
+print(prepare_user_list(users)) #upcoming_birthdays)
 
 
