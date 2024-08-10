@@ -10,7 +10,7 @@ def getDaysFromToday(datum):
         datum = str(datum)
         a = datetime.strptime(datum, "%Y.%m.%d").date()
         today = datetime.now().date()
-        diff = (today - a)
+        diff = (today - a) 
         print(diff.days)
         return diff.days
     except ValueError:
